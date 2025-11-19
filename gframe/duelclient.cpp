@@ -2606,7 +2606,7 @@ bool DuelClient::ClientAnalyze(unsigned char* msg, int len) {
 			else if(reason & REASON_DESTROY && pl != cl)
 				soundManager.PlaySoundEffect(SOUND_DESTROYED);
 		}
-		int appear = mainGame->gameConf.quick_animation ? 12 : 20;
+		int appear = mainGame->gameConf.quick_animation ? 1 : 20;
 		if (pl == 0) {
 			ClientCard* pcard = new ClientCard;
 			pcard->position = cp;

@@ -1120,7 +1120,7 @@ void Game::PopupElement(irr::gui::IGUIElement * element, int hideframe) {
 }
 void Game::WaitFrameSignal(int frame) {
 	frameSignal.Reset();
-	signalFrame = (gameConf.quick_animation && frame >= 12) ? 12 : frame;
+	signalFrame = (gameConf.quick_animation && frame >= 1) ? 1 : frame;
 	frameSignal.Wait();
 }
 void Game::DrawThumb(code_pointer cp, irr::core::vector2di pos, const LFList* lflist, bool drag) {
